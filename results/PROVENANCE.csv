@@ -1,0 +1,23 @@
+file,produced_by,status,note
+results/audit.json,analysis.py audit/descriptives/ols,regenerated during verification; identical to stored (values),
+results/descriptives.json,analysis.py audit/descriptives/ols,regenerated during verification; identical to stored (values),
+results/ols.json,analysis.py audit/descriptives/ols,regenerated during verification; identical to stored (values),"ols.json stored copy had three development-only keys removed (uncentred VIF, two time-coding variants)"
+"results/cv_S2_P.npz, _hp.json, _summary.json",analysis.py cv,regenerated in full during verification; identical to stored,"10 repeats x 10 folds, 12 min on 2 cores"
+"results/cv_S1_P.npz, _hp.json, _summary.json",analysis.py cv --sensitivity,repeat 1 of 10 regenerated and identical; repeats 2-10 previously saved,needs --sensitivity
+"results/cv_S3_P.npz, _hp.json, _summary.json",analysis.py cv --sensitivity,repeat 1 of 10 regenerated and identical; repeats 2-10 previously saved,needs --sensitivity
+"results/cv_S4_P.npz, _hp.json, _summary.json",analysis.py cv --sensitivity,repeat 1 of 10 regenerated and identical; repeats 2-10 previously saved,needs --sensitivity
+"results/cv_S2_A1.npz, _hp.json, _summary.json",analysis.py cv --sensitivity,repeat 1 of 10 regenerated and identical; repeats 2-10 previously saved,needs --sensitivity
+results/compare.json,analysis.py compare,regenerated in full during verification; identical to stored,"includes sensitivity specifications, computed from the stored CV arrays"
+results/nonlin.json,analysis.py nonlin,regenerated in full during verification; identical to stored,regenerated file additionally records B = 300 in pdp_boot
+"results/stability.json, importance_boot_B500.npz",analysis.py stability,regenerated in full during verification; identical to stored,"500 bootstrap resamples, 300 split-halves; stored copy of stability.json had unreported development items removed"
+"results/*_table*.csv, rf_*_table.csv, ols_figure_table.*, correlations_P.csv, fig*_data.csv",analysis.py tables,regenerated from stored results (byte-identical where a stored original existed),
+figures/*,analysis.py figures,regenerated from stored results; pixel-identical to development figures except Figure 1 (max 11/255 on antialiased text pixels),
+results/simulations/initial_nulls_B300.json,simulations.py initial,regenerated in full during verification; identical to stored (all 600 replicates),values were previously part of nonlin.json
+results/simulations/null_ord_B2000.json/.npz,simulations.py nulls,PREVIOUSLY SAVED; replicates 1-20 of 2000 regenerated and identical,B = 2000
+results/simulations/null_disc_B2000.json/.npz,simulations.py nulls,PREVIOUSLY SAVED; replicates 1-20 of 2000 regenerated and identical,B = 2000
+results/simulations/null_cont_B2000.json/.npz,simulations.py nulls,PREVIOUSLY SAVED; replicates 1-20 of 2000 regenerated and identical,B = 2000
+"results/simulations/retune_null_B300.json, null_retuned_B300.npz",simulations.py retune,"PREVIOUSLY SAVED; replicates 1-10 of 300 regenerated and identical, plus the observed-data re-tuning under 8 CV seeds (full)",
+"results/simulations/size_check.json, size_check_raw.csv",simulations.py size,PREVIOUSLY SAVED; 3 of 400 replicates per generating process regenerated and identical; json re-aggregated from raw CSV and matches,
+"results/simulations/power.json, power_raw.csv",simulations.py power,PREVIOUSLY SAVED; 3 of 120 replicates in every N x scenario cell regenerated and identical; json re-aggregated from raw CSV and matches,
+results/simulations/power_N478_bracket.*,simulations.py bracket,regenerated in full from the stored power and null files; identical,
+"results/simulations/simulation_parameters.json, results/analysis_parameters.json",written by the scripts,"documentation of seeds, grids and replicate counts",

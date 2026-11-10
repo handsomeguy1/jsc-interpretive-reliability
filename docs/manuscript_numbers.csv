@@ -1,0 +1,89 @@
+id,section,manuscript_text,manuscript_value,decimals,source
+n_users,3.1,"primary sample, N",478.0,0,json:audit.json::obj['n']['P']
+age_mean,3.1,mean age (years),26.1,1,json:audit.json::obj['P_age_mean']
+age_sd,3.1,SD of age,9.9,1,json:audit.json::obj['P_age_sd']
+age_min,3.1,"age range, minimum",13.0,0,json:descriptives.json::obj['describe']['age']['min']
+age_max,3.1,"age range, maximum",91.0,0,json:descriptives.json::obj['describe']['age']['max']
+n_female,3.1,263 females,263.0,0,json:descriptives.json::obj['gender_counts']['Female']
+pct_female,3.1,55.0% females,55.0,1,json:descriptives.json::obj['gender_counts']['Female']/obj['n']*100
+n_male,3.1,208 males,208.0,0,json:descriptives.json::obj['gender_counts']['Male']
+pct_male,3.1,43.5% males,43.5,1,json:descriptives.json::obj['gender_counts']['Male']/obj['n']*100
+n_other,3.1,seven respondents other gender,7.0,0,json:descriptives.json::obj['gender_counts']['Other']
+pct_other,3.1,1.5% other gender,1.5,1,json:descriptives.json::obj['gender_counts']['Other']/obj['n']*100
+pct_univ,3.1,university students 60.9%,60.9,1,json:descriptives.json::obj['occupation_counts']['University Student']/obj['n']*100
+pct_salaried,3.1,salaried workers 27.2%,27.2,1,json:descriptives.json::obj['occupation_counts']['Salaried Worker']/obj['n']*100
+time_mean,3.1,mean daily use (hours),3.54,2,json:descriptives.json::obj['describe']['time_h']['mean']
+time_sd,3.1,SD of daily use,1.75,2,json:descriptives.json::obj['describe']['time_h']['sd']
+r_dep_interest,3.1,correlation of depressive affect with interest fluctuation,0.49,2,"csv:correlations_P.csv::obj.set_index(obj.columns[0]).loc['depressed','interest']"
+r_dep_compare,3.1,correlation of depressive affect with social comparison,0.41,2,"csv:correlations_P.csv::obj.set_index(obj.columns[0]).loc['depressed','compare']"
+r_dep_easily_distracted,3.1,correlation of depressive affect with distractibility,0.4,2,"csv:correlations_P.csv::obj.set_index(obj.columns[0]).loc['depressed','easily_distracted']"
+r_dep_sleep,3.1,correlation of depressive affect with sleep problems,0.37,2,"csv:correlations_P.csv::obj.set_index(obj.columns[0]).loc['depressed','sleep']"
+ols_r2,3.1,OLS R-squared,0.4,3,json:ols.json::obj['P_S2']['r2']
+ols_adj_r2,3.1,adjusted R-squared,0.387,3,json:ols.json::obj['P_S2']['adj_r2']
+beta_interest,3.1,"standardised beta, interest fluctuation",0.226,3,json:ols.json::obj['P_S2']['std_beta']['interest']
+beta_compare,3.1,"standardised beta, social comparison",0.204,3,json:ols.json::obj['P_S2']['std_beta']['compare']
+beta_sleep,3.1,"standardised beta, sleep problems",0.186,3,json:ols.json::obj['P_S2']['std_beta']['sleep']
+beta_age,3.1,"standardised beta, age",-0.146,3,json:ols.json::obj['P_S2']['std_beta']['age']
+beta_easily_distracted,3.1,"standardised beta, distractibility",0.098,3,json:ols.json::obj['P_S2']['std_beta']['easily_distracted']
+beta_time_h,3.1,"standardised beta, time on social media",0.083,3,json:ols.json::obj['P_S2']['std_beta']['time_h']
+p_lt001_interest,3.1,"p < .001, interest fluctuation (1 = true)",1.0,0,json:ols.json::float(obj['P_S2']['p_hc3'][obj['P_S2']['cols'].index('interest')] < 0.001)
+p_lt001_compare,3.1,"p < .001, social comparison (1 = true)",1.0,0,json:ols.json::float(obj['P_S2']['p_hc3'][obj['P_S2']['cols'].index('compare')] < 0.001)
+p_lt001_sleep,3.1,"p < .001, sleep problems (1 = true)",1.0,0,json:ols.json::float(obj['P_S2']['p_hc3'][obj['P_S2']['cols'].index('sleep')] < 0.001)
+p_lt001_age,3.1,"p < .001, age (1 = true)",1.0,0,json:ols.json::float(obj['P_S2']['p_hc3'][obj['P_S2']['cols'].index('age')] < 0.001)
+p_distract,3.1,distractibility p = .052,0.052,3,json:ols.json::obj['P_S2']['p_hc3'][obj['P_S2']['cols'].index('easily_distracted')]
+p_time,3.1,time p = .058,0.058,3,json:ols.json::obj['P_S2']['p_hc3'][obj['P_S2']['cols'].index('time_h')]
+male_est,3.1,"male vs female, score points",-0.03,2,"csv:ols_figure_table.csv::obj[obj.key==""male""].est.iloc[0]"
+male_lo,3.1,"male vs female, CI lower",-0.22,2,csv:ols_figure_table.csv::obj[obj.key=='male'].lo.iloc[0]
+male_hi,3.1,"male vs female, CI upper",0.17,2,csv:ols_figure_table.csv::obj[obj.key=='male'].hi.iloc[0]
+max_vif,4.1,variance inflation factors below 1.7 (1 = true),1.0,0,json:ols.json::float(obj['P_S2']['max_vif'] < 1.7)
+cv_r2_ols,3.2 / Table 1 / Abstract,"out-of-sample R-squared, OLS",0.368,3,json:compare.json::obj['S2_P']['R2_ols']['mean']
+cv_r2_spline,3.2 / Table 1 / Abstract,"out-of-sample R-squared, spline",0.362,3,json:compare.json::obj['S2_P']['R2_spline']['mean']
+cv_r2_rf,3.2 / Table 1 / Abstract,"out-of-sample R-squared, Random Forest",0.371,3,json:compare.json::obj['S2_P']['R2_rf']['mean']
+diff_rf_minus_ols,3.2 / Table 1,"Random Forest minus OLS, R-squared difference",0.003,3,json:compare.json::obj['S2_P']['rf_minus_ols']['R2_diff_mean']
+diff_lo_rf_minus_ols,3.2 / Table 1,"Random Forest minus OLS, Nadeau-Bengio CI lower",-0.03,3,json:compare.json::obj['S2_P']['rf_minus_ols']['NB_CI95_R2diff'][0]
+diff_hi_rf_minus_ols,3.2 / Table 1,"Random Forest minus OLS, Nadeau-Bengio CI upper",0.036,3,json:compare.json::obj['S2_P']['rf_minus_ols']['NB_CI95_R2diff'][1]
+diff_spline_minus_ols,3.2 / Table 1,"spline minus OLS, R-squared difference",-0.005,3,json:compare.json::obj['S2_P']['spline_minus_ols']['R2_diff_mean']
+diff_lo_spline_minus_ols,3.2 / Table 1,"spline minus OLS, Nadeau-Bengio CI lower",-0.023,3,json:compare.json::obj['S2_P']['spline_minus_ols']['NB_CI95_R2diff'][0]
+diff_hi_spline_minus_ols,3.2 / Table 1,"spline minus OLS, Nadeau-Bengio CI upper",0.012,3,json:compare.json::obj['S2_P']['spline_minus_ols']['NB_CI95_R2diff'][1]
+s3_gain_min,3.2,sensitivity specification with four extra items raised R-squared by roughly 0.07 (smallest gain),0.07,2,"json:compare.json::min(obj['S3_P']['R2_'+m]['mean']-obj['S2_P']['R2_'+m]['mean'] for m in ('ols','spline','rf'))"
+s3_gain_max,3.2,... to 0.08 (largest gain),0.08,2,"json:compare.json::max(obj['S3_P']['R2_'+m]['mean']-obj['S2_P']['R2_'+m]['mean'] for m in ('ols','spline','rf'))"
+bend_interest,3.3,fitted curve rises about 0.43 more between levels 3 and 5 than the line through levels 1-3 implies,0.43,2,"json:nonlin.json::(obj['pdp_obs']['interest'][4]-obj['pdp_obs']['interest'][2])-2*np.polyfit([1,2,3],obj['pdp_obs']['interest'][:3],1)[0]"
+F_p_interest,3.3,"categorical-vs-linear F-test p, interest fluctuation",0.26,2,json:nonlin.json::obj['F_quad']['interest']['p_F']
+F_p_compare,3.3,"categorical-vs-linear F-test p, social comparison",0.74,2,json:nonlin.json::obj['F_quad']['compare']['p_F']
+F_p_sleep,3.3,"categorical-vs-linear F-test p, sleep problems",0.34,2,json:nonlin.json::obj['F_quad']['sleep']['p_F']
+p_Gmax_ord,3.3 / Table 2 / Abstract (ordinal),"selection-aware p, ordinal null (primary)",0.089,3,simjson:null_ord_B2000.json::obj['p_Gmax']
+p_Gmax_cont,3.3 / Table 2 / Abstract (ordinal),"selection-aware p, continuous null",0.08,3,simjson:null_cont_B2000.json::obj['p_Gmax']
+p_Gmax_disc,3.3 / Table 2 / Abstract (ordinal),"selection-aware p, rounded-and-clipped null",0.048,3,simjson:null_disc_B2000.json::obj['p_Gmax']
+var_ord,3.3 / Table 2,"mean simulated outcome variance, ordinal",1.72,2,simjson:null_ord_B2000.json::obj['diag']['outcome_var']
+var_cont,3.3 / Table 2,"mean simulated outcome variance, continuous",1.71,2,simjson:null_cont_B2000.json::obj['diag']['outcome_var']
+var_disc,3.3 / Table 2,"mean simulated outcome variance, rounded-and-clipped",1.46,2,simjson:null_disc_B2000.json::obj['diag']['outcome_var']
+var_obs,3.3 / Table 2,observed outcome variance,1.71,2,json:descriptives.json::obj['describe']['depressed']['sd']**2
+size_disc_null_on_cont,3.3,rounded-and-clipped null rejects about 10% of truly linear datasets (continuous generating process),0.1,2,simjson:size_check.json::obj['cont']['Gmax_size_with_disc_null']
+size_disc_null_on_ord,3.3,"same, ordinal generating process",0.1,2,simjson:size_check.json::obj['ord']['Gmax_size_with_disc_null']
+p_retuned,3.3,p after retuning forest hyperparameters (rounded-and-clipped),0.063,3,simjson:retune_null_B300.json::obj['retuned']['p_Gmax_vs_fixedobs']
+power_lo_0.3,3.3,power for extra rise 0.3: lower end of range (%),11.0,0,"simjson:power_bracket_N478.json::100*min(obj['rows'][1]['Gmax_disc'],obj['rows'][1]['Gmax_cont'],obj['rows'][1]['Gmax_ord'],obj['rows'][1]['Gmax_own_linear_crit'])"
+power_hi_0.3,3.3,power for extra rise 0.3: upper end of range (%),22.0,0,"simjson:power_bracket_N478.json::100*max(obj['rows'][1]['Gmax_disc'],obj['rows'][1]['Gmax_cont'],obj['rows'][1]['Gmax_ord'],obj['rows'][1]['Gmax_own_linear_crit'])"
+power_lo_0.6,3.3,power for extra rise 0.6: lower end of range (%),49.0,0,"simjson:power_bracket_N478.json::100*min(obj['rows'][2]['Gmax_disc'],obj['rows'][2]['Gmax_cont'],obj['rows'][2]['Gmax_ord'],obj['rows'][2]['Gmax_own_linear_crit'])"
+power_hi_0.6,3.3,power for extra rise 0.6: upper end of range (%),63.0,0,"simjson:power_bracket_N478.json::100*max(obj['rows'][2]['Gmax_disc'],obj['rows'][2]['Gmax_cont'],obj['rows'][2]['Gmax_ord'],obj['rows'][2]['Gmax_own_linear_crit'])"
+power_lo_0.9,3.3,power for extra rise 0.9: lower end of range (%),82.0,0,"simjson:power_bracket_N478.json::100*min(obj['rows'][3]['Gmax_disc'],obj['rows'][3]['Gmax_cont'],obj['rows'][3]['Gmax_ord'],obj['rows'][3]['Gmax_own_linear_crit'])"
+power_hi_0.9,3.3,power for extra rise 0.9: upper end of range (%),86.0,0,"simjson:power_bracket_N478.json::100*max(obj['rows'][3]['Gmax_disc'],obj['rows'][3]['Gmax_cont'],obj['rows'][3]['Gmax_ord'],obj['rows'][3]['Gmax_own_linear_crit'])"
+perm_imp_interest,3.4,"RF permutation importance, interest fluctuation",0.204,3,json:stability.json::obj['full']['rf_perm_cv'][obj['names'].index('interest')]
+perm_imp_compare,3.4,"RF permutation importance, social comparison",0.106,3,json:stability.json::obj['full']['rf_perm_cv'][obj['names'].index('compare')]
+perm_imp_sleep,3.4,"RF permutation importance, sleep problems",0.098,3,json:stability.json::obj['full']['rf_perm_cv'][obj['names'].index('sleep')]
+top3_interest,3.4,"in top three in bootstrap resamples (%), interest fluctuation",99.6,1,json:stability.json::100*obj['bootstrap']['perm']['prop_in_top3']['interest']
+top3_compare,3.4,"in top three in bootstrap resamples (%), social comparison",99.0,1,json:stability.json::100*obj['bootstrap']['perm']['prop_in_top3']['compare']
+top3_sleep,3.4,"in top three in bootstrap resamples (%), sleep problems",92.0,1,json:stability.json::100*obj['bootstrap']['perm']['prop_in_top3']['sleep']
+rank1_interest,3.4,interest fluctuation ranked first in 85% of resamples,85.0,0,json:stability.json::100*obj['bootstrap']['perm']['prop_rank1']['interest']
+boot_top3_perm,3.4 / Table 3 / Abstract,"top three recovered in bootstrap (%), RF permutation",91.0,0,json:stability.json::100*obj['bootstrap']['perm']['top3_exact_recovery']
+split_top3_perm,3.4 / Table 3,"top three agree between split halves (%), RF permutation",92.0,0,json:stability.json::100*obj['split_half']['perm']['top3_agree']
+boot_top3_ols,3.4 / Table 3 / Abstract,"top three recovered in bootstrap (%), OLS coefficient",78.0,0,json:stability.json::100*obj['bootstrap']['ols']['top3_exact_recovery']
+split_top3_ols,3.4 / Table 3,"top three agree between split halves (%), OLS coefficient",56.0,0,json:stability.json::100*obj['split_half']['ols']['top3_agree']
+boot_top3_mdi,3.4 / Table 3 / Abstract,"top three recovered in bootstrap (%), RF impurity",57.0,0,json:stability.json::100*obj['bootstrap']['mdi']['top3_exact_recovery']
+split_top3_mdi,3.4 / Table 3,"top three agree between split halves (%), RF impurity",22.0,0,json:stability.json::100*obj['split_half']['mdi']['top3_agree']
+B_boot,2.6,bootstrap resamples,500.0,0,json:stability.json::obj['bootstrap']['perm']['B']
+B_split,2.6,random splits,300.0,0,json:stability.json::obj['split_half']['perm']['B']
+initial_p_disc,2.7,"first-pass p, rounded-and-clipped null (B = 300)",0.047,3,simjson:initial_nulls_B300.json::obj['N2_discretised']['p_Gmax_selection_over_predictors_and_breakpoints']
+initial_p_cont,2.7,"first-pass p, continuous null (B = 300)",0.106,3,simjson:initial_nulls_B300.json::obj['N1_continuous']['p_Gmax_selection_over_predictors_and_breakpoints']
+B_null,2.5,simulated datasets per null,2000.0,0,simjson:null_ord_B2000.json::obj['B']
+R_size,2.5,fresh datasets per generating process (size check),400.0,0,simjson:size_check.json::obj['ord']['reps']
+B_retune,2.5,"simulated datasets, retuning check",300.0,0,simjson:retune_null_B300.json::obj['B']

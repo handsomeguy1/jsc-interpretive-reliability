@@ -1,0 +1,74 @@
+{
+ "primary_sample": "users of social media (Q6 = Yes), N = 478",
+ "primary_specification": "S2",
+ "cv": {
+  "outer_folds": 10,
+  "repeats": 10,
+  "outer_seed": "1000 + repeat",
+  "inner_folds": 5,
+  "inner_seed": "5000 + 100*repeat + fold",
+  "rf_trees": 300,
+  "rf_seed": "100*repeat + fold",
+  "rf_grid": {
+   "min_samples_leaf": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "max_features": [
+    0.33,
+    0.6,
+    1.0
+   ]
+  },
+  "spline_degree": 2,
+  "spline_grid": {
+   "n_knots": [
+    3,
+    4,
+    5
+   ],
+   "ridge_alpha": [
+    0.1,
+    1,
+    10,
+    100
+   ]
+  }
+ },
+ "compare": {
+  "method": "Nadeau-Bengio corrected resampled t over the 100 outer folds",
+  "bootstrap_seed": 42,
+  "bootstrap_draws": 5000
+ },
+ "nonlin": {
+  "full_sample_rf_search": {
+   "trees": 300,
+   "forest_seed": 20261109,
+   "cv_seed": 20261109,
+   "folds": 5
+  },
+  "observed_forest_seed": 1,
+  "pdp_bootstrap_B": 300,
+  "pdp_bootstrap_seed": "90000 + i (forest seed i)",
+  "pdp_levels": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "stability": {
+  "bootstrap_B": 500,
+  "bootstrap_seed": "300000 + i (forest seed i)",
+  "split_half_B": 300,
+  "split_seed": "400000 + i (forest seeds i and i + 10000)",
+  "permutations_per_predictor": 3,
+  "reference_forest_seed": 1,
+  "reference_cv_folds": 5,
+  "reference_cv_seed": 1
+ }
+}

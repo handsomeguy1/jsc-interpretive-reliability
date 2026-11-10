@@ -1,0 +1,7 @@
+design,measure,B,tau_mean,tau_q05,tau_q95,top3
+bootstrap,OLS |std. beta|,500,0.7107,0.4286,0.9048,0.7820
+bootstrap,RF permutation,500,0.7358,0.5238,0.9048,0.9080
+bootstrap,RF impurity,500,0.7063,0.4286,0.9048,0.5720
+split_half,OLS |std. beta|,300,0.3952,0.0476,0.7143,0.5567
+split_half,RF permutation,300,0.7086,0.4286,0.9048,0.9233
+split_half,RF impurity,300,0.4537,0.0476,0.8095,0.2233

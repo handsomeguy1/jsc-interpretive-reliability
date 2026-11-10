@@ -1,0 +1,9 @@
+# Versions with which the stored results were produced and verified (Python 3.13).
+# Results are seeded and do not depend on the number of cores, but tree ensembles can differ in the last decimals across scikit-learn/numpy versions;
+# use these pins to reproduce the stored numbers.
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+joblib==1.6.0

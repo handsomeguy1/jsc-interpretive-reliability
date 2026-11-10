@@ -1,0 +1,4 @@
+null,B,p_Gmax,p_Dmax,p_G_interest,p_G_compare,p_G_sleep,q95_Gmax,observed_Gmax
+ordered-logit (primary),2000,0.0890,0.3743,0.0555,0.3668,0.0870,0.0839,0.0789
+continuous,2000,0.0800,0.2934,0.0410,0.3503,0.1044,0.0847,0.0789
+rounded and clipped,2000,0.0480,0.1944,0.0255,0.2989,0.0710,0.0784,0.0789

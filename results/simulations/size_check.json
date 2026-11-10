@@ -1,0 +1,38 @@
+{
+ "disc": {
+  "reps": 400,
+  "F_test_size": 0.0575,
+  "quad_test_size": 0.0625,
+  "Gmax_size_with_disc_null": 0.0475,
+  "Dmax_size_with_disc_null": 0.05,
+  "Gmax_size_with_cont_null": 0.0225,
+  "Dmax_size_with_cont_null": 0.04,
+  "Gmax_size_with_ord_null": 0.0275,
+  "Dmax_size_with_ord_null": 0.02,
+  "binomial_se_at_0p05": 0.010897247358851683
+ },
+ "cont": {
+  "reps": 400,
+  "F_test_size": 0.035,
+  "quad_test_size": 0.025,
+  "Gmax_size_with_disc_null": 0.1,
+  "Dmax_size_with_disc_null": 0.0825,
+  "Gmax_size_with_cont_null": 0.06,
+  "Dmax_size_with_cont_null": 0.0675,
+  "Gmax_size_with_ord_null": 0.065,
+  "Dmax_size_with_ord_null": 0.0275,
+  "binomial_se_at_0p05": 0.010897247358851683
+ },
+ "ord": {
+  "reps": 400,
+  "F_test_size": 0.0775,
+  "quad_test_size": 0.0425,
+  "Gmax_size_with_disc_null": 0.0975,
+  "Dmax_size_with_disc_null": 0.175,
+  "Gmax_size_with_cont_null": 0.0575,
+  "Dmax_size_with_cont_null": 0.1275,
+  "Gmax_size_with_ord_null": 0.0575,
+  "Dmax_size_with_ord_null": 0.0525,
+  "binomial_se_at_0p05": 0.010897247358851683
+ }
+}

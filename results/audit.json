@@ -1,0 +1,721 @@
+{
+ "sha256": "5a6ae636760314616754b83c6e4626ea55247f7586e6b5e17ddcdff80ca11fa3",
+ "file_lines": 482,
+ "rows": 481,
+ "missing": {
+  "org": 30
+ },
+ "dup_timestamp_rows": 69,
+ "exact_dup_excl_ts_rows": 0,
+ "exact_dup_excl_ts_extra": 0,
+ "exact_dup_incl_ts_extra": 0,
+ "dup_groups": [],
+ "dup_on_model_vars_extra": 1,
+ "use_sm": {
+  "Yes": 478,
+  "No": 3
+ },
+ "nonusers": [
+  {
+   "row": 11,
+   "age": 20.0,
+   "gender": "Male",
+   "time": "Less than an Hour",
+   "depressed": 1
+  },
+  {
+   "row": 56,
+   "age": 26.0,
+   "gender": "Male",
+   "time": "Between 1 and 2 hours",
+   "depressed": 1
+  },
+  {
+   "row": 136,
+   "age": 50.0,
+   "gender": "Male",
+   "time": "Between 1 and 2 hours",
+   "depressed": 2
+  }
+ ],
+ "age_describe": {
+  "count": 481.0,
+  "mean": 26.13659043659044,
+  "std": 9.915110102800588,
+  "min": 13.0,
+  "25%": 21.0,
+  "50%": 22.0,
+  "75%": 26.0,
+  "max": 91.0
+ },
+ "age_values_outside_15_45": [
+  {
+   "row": 44,
+   "age": 56.0,
+   "occ": "Retired",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 48,
+   "age": 65.0,
+   "occ": "Retired",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 55,
+   "age": 55.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 70,
+   "age": 14.0,
+   "occ": "School Student",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 74,
+   "age": 14.0,
+   "occ": "School Student",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 98,
+   "age": 14.0,
+   "occ": "School Student",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 109,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 111,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 112,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 114,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 115,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 122,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 132,
+   "age": 50.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 133,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 136,
+   "age": 50.0,
+   "occ": "Salaried Worker",
+   "use_sm": "No"
+  },
+  {
+   "row": 137,
+   "age": 49.0,
+   "occ": "Retired",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 138,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 139,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 140,
+   "age": 51.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 141,
+   "age": 50.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 142,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 145,
+   "age": 46.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 147,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 149,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 150,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 151,
+   "age": 49.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 154,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 155,
+   "age": 50.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 156,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 158,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 163,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 164,
+   "age": 48.0,
+   "occ": "Retired",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 165,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 166,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 167,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 168,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 170,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 177,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 183,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 184,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 188,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 189,
+   "age": 47.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 218,
+   "age": 48.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 221,
+   "age": 50.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 230,
+   "age": 46.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 240,
+   "age": 69.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 258,
+   "age": 91.0,
+   "occ": "University Student",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 403,
+   "age": 52.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 455,
+   "age": 60.0,
+   "occ": "Retired",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 456,
+   "age": 49.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 458,
+   "age": 56.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 459,
+   "age": 51.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 462,
+   "age": 50.0,
+   "occ": "University Student",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 465,
+   "age": 13.0,
+   "occ": "School Student",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 466,
+   "age": 14.0,
+   "occ": "School Student",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 467,
+   "age": 13.0,
+   "occ": "School Student",
+   "use_sm": "Yes"
+  },
+  {
+   "row": 482,
+   "age": 53.0,
+   "occ": "Salaried Worker",
+   "use_sm": "Yes"
+  }
+ ],
+ "age_n_lt15": 6,
+ "age_n_gt45": 51,
+ "n_age15_45_all": 424,
+ "levels_gender": {
+  "Female": 263,
+  "Male": 211,
+  "Nonbinary ": 1,
+  "Non-binary": 1,
+  "NB": 1,
+  "unsure ": 1,
+  "Trans": 1,
+  "Non binary ": 1,
+  "There are others???": 1
+ },
+ "levels_rel": {
+  "Single": 285,
+  "Married": 101,
+  "In a relationship": 88,
+  "Divorced": 7
+ },
+ "levels_occ": {
+  "University Student": 292,
+  "Salaried Worker": 132,
+  "School Student": 49,
+  "Retired": 8
+ },
+ "levels_time": {
+  "More than 5 hours": 116,
+  "Between 2 and 3 hours": 101,
+  "Between 3 and 4 hours": 93,
+  "Between 1 and 2 hours": 70,
+  "Between 4 and 5 hours": 67,
+  "Less than an Hour": 34
+ },
+ "likert_ranges": {
+  "purpose": [
+   1,
+   5
+  ],
+  "distract_busy": [
+   1,
+   5
+  ],
+  "restless": [
+   1,
+   5
+  ],
+  "easily_distracted": [
+   1,
+   5
+  ],
+  "worries": [
+   1,
+   5
+  ],
+  "concentrate": [
+   1,
+   5
+  ],
+  "compare": [
+   1,
+   5
+  ],
+  "compare_feel": [
+   1,
+   5
+  ],
+  "validation": [
+   1,
+   5
+  ],
+  "depressed": [
+   1,
+   5
+  ],
+  "interest": [
+   1,
+   5
+  ],
+  "sleep": [
+   1,
+   5
+  ]
+ },
+ "likert_dist": {
+  "purpose": {
+   "1": 20,
+   "2": 65,
+   "3": 129,
+   "4": 163,
+   "5": 104
+  },
+  "distract_busy": {
+   "1": 56,
+   "2": 86,
+   "3": 104,
+   "4": 118,
+   "5": 117
+  },
+  "restless": {
+   "1": 117,
+   "2": 124,
+   "3": 124,
+   "4": 72,
+   "5": 44
+  },
+  "easily_distracted": {
+   "1": 33,
+   "2": 77,
+   "3": 161,
+   "4": 109,
+   "5": 101
+  },
+  "worries": {
+   "1": 40,
+   "2": 71,
+   "3": 95,
+   "4": 130,
+   "5": 145
+  },
+  "concentrate": {
+   "1": 67,
+   "2": 81,
+   "3": 109,
+   "4": 115,
+   "5": 109
+  },
+  "compare": {
+   "1": 110,
+   "2": 108,
+   "3": 101,
+   "4": 77,
+   "5": 85
+  },
+  "compare_feel": {
+   "1": 66,
+   "2": 103,
+   "3": 218,
+   "4": 61,
+   "5": 33
+  },
+  "validation": {
+   "1": 150,
+   "2": 99,
+   "3": 122,
+   "4": 83,
+   "5": 27
+  },
+  "depressed": {
+   "1": 60,
+   "2": 83,
+   "3": 117,
+   "4": 116,
+   "5": 105
+  },
+  "interest": {
+   "1": 50,
+   "2": 109,
+   "3": 117,
+   "4": 119,
+   "5": 86
+  },
+  "sleep": {
+   "1": 86,
+   "2": 91,
+   "3": 69,
+   "4": 110,
+   "5": 125
+  }
+ },
+ "unmapped_time": 0,
+ "occ_by_age": {
+  "Retired": {
+   "count": 8.0,
+   "mean": 46.0,
+   "std": 14.8,
+   "min": 23.0,
+   "25%": 35.2,
+   "50%": 48.5,
+   "75%": 57.0,
+   "max": 65.0
+  },
+  "Salaried Worker": {
+   "count": 132.0,
+   "mean": 36.5,
+   "std": 10.3,
+   "min": 20.0,
+   "25%": 27.0,
+   "50%": 35.0,
+   "75%": 47.0,
+   "max": 69.0
+  },
+  "School Student": {
+   "count": 49.0,
+   "mean": 18.2,
+   "std": 2.8,
+   "min": 13.0,
+   "25%": 17.0,
+   "50%": 18.0,
+   "75%": 19.0,
+   "max": 25.0
+  },
+  "University Student": {
+   "count": 292.0,
+   "mean": 22.2,
+   "std": 4.7,
+   "min": 18.0,
+   "25%": 21.0,
+   "50%": 22.0,
+   "75%": 23.0,
+   "max": 91.0
+  }
+ },
+ "school_age_gt25": [],
+ "n": {
+  "A0": 481,
+  "P": 478,
+  "A1": 424,
+  "A2": 477
+ },
+ "P_gender": {
+  "Female": 263,
+  "Male": 208,
+  "Nonbinary ": 1,
+  "Non-binary": 1,
+  "NB": 1,
+  "unsure ": 1,
+  "Trans": 1,
+  "Non binary ": 1,
+  "There are others???": 1
+ },
+ "P_age_sd": 9.881979658384273,
+ "P_age_mean": 26.099790794979082,
+ "A1_gender": {
+  "Female": 247,
+  "Male": 171,
+  "Nonbinary ": 1,
+  "Non-binary": 1,
+  "NB": 1,
+  "unsure ": 1,
+  "Non binary ": 1,
+  "There are others???": 1
+ },
+ "A1_n_users": 422,
+ "A1_age_sd": 4.898132007750592,
+ "P_and_age15_45": 422,
+ "n_after_dedupe_all": 481,
+ "corr_distract_items": {
+  "easily_distracted": {
+   "easily_distracted": 1.0,
+   "distract_busy": 0.602,
+   "concentrate": 0.659,
+   "worries": 0.455,
+   "purpose": 0.359
+  },
+  "distract_busy": {
+   "easily_distracted": 0.602,
+   "distract_busy": 1.0,
+   "concentrate": 0.521,
+   "worries": 0.333,
+   "purpose": 0.459
+  },
+  "concentrate": {
+   "easily_distracted": 0.659,
+   "distract_busy": 0.521,
+   "concentrate": 1.0,
+   "worries": 0.54,
+   "purpose": 0.284
+  },
+  "worries": {
+   "easily_distracted": 0.455,
+   "distract_busy": 0.333,
+   "concentrate": 0.54,
+   "worries": 1.0,
+   "purpose": 0.243
+  },
+  "purpose": {
+   "easily_distracted": 0.359,
+   "distract_busy": 0.459,
+   "concentrate": 0.284,
+   "worries": 0.243,
+   "purpose": 1.0
+  }
+ },
+ "corr_outcome": {
+  "purpose": 0.31,
+  "distract_busy": 0.37,
+  "restless": 0.321,
+  "easily_distracted": 0.4,
+  "worries": 0.583,
+  "concentrate": 0.503,
+  "compare": 0.411,
+  "compare_feel": 0.033,
+  "validation": 0.264,
+  "depressed": 1.0,
+  "interest": 0.492,
+  "sleep": 0.368,
+  "time_h": 0.318,
+  "age": -0.305
+ },
+ "P_levels": {
+  "gender": {
+   "Female": 263,
+   "Male": 208,
+   "NB": 1,
+   "Non binary ": 1,
+   "Non-binary": 1,
+   "Nonbinary ": 1,
+   "There are others???": 1,
+   "Trans": 1,
+   "unsure ": 1
+  },
+  "rel": {
+   "Divorced": 6,
+   "In a relationship": 87,
+   "Married": 101,
+   "Single": 284
+  },
+  "occ": {
+   "Retired": 8,
+   "Salaried Worker": 130,
+   "School Student": 49,
+   "University Student": 291
+  }
+ },
+ "P_dup_extra": 0
+}

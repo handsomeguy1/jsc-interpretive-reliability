@@ -1,0 +1,11 @@
+group,var,key,scaling,est,lo,hi,b_raw,se_hc3,p
+Behavioural predictor,Daily time on social media (hours),time_h,"per 1 SD of predictor, in SDs of outcome",0.0834,-0.0028,0.1695,0.0623,0.0328,0.0579
+Behavioural predictor,Easily distracted by social media,easily_distracted,"per 1 SD of predictor, in SDs of outcome",0.0980,-0.0008,0.1968,0.1094,0.0562,0.0519
+Behavioural predictor,Restless without social media,restless,"per 1 SD of predictor, in SDs of outcome",0.0230,-0.0739,0.1199,0.0240,0.0514,0.6408
+Behavioural predictor,Seeks validation from social media,validation,"per 1 SD of predictor, in SDs of outcome",0.0600,-0.0227,0.1427,0.0630,0.0442,0.1547
+Behavioural predictor,Compares self with others,compare,"per 1 SD of predictor, in SDs of outcome",0.2036,0.1147,0.2925,0.1896,0.0421,0.0000
+Behavioural predictor,Fluctuation in interest in daily activities,interest,"per 1 SD of predictor, in SDs of outcome",0.2262,0.1253,0.3271,0.2356,0.0535,0.0000
+Behavioural predictor,Sleep problems,sleep,"per 1 SD of predictor, in SDs of outcome",0.1865,0.1052,0.2677,0.1672,0.0371,0.0000
+Demographic covariate,Age (years),age,"per 1 SD of predictor, in SDs of outcome",-0.1460,-0.2277,-0.0643,-0.0193,0.0055,0.0005
+Demographic covariate,Male (vs female),male,"raw: score-point difference vs female (0/1 indicator, not standardised)",-0.0264,-0.2220,0.1692,-0.0264,0.0995,0.7909
+Demographic covariate,Other gender (vs female),gender_other,"raw: score-point difference vs female (0/1 indicator, not standardised)",0.3495,-0.7197,1.4188,0.3495,0.5441,0.5210

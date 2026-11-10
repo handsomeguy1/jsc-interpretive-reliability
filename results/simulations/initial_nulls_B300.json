@@ -1,0 +1,68 @@
+{
+ "description": "Initial selection-aware null tests (B=300 simulated datasets) from the first analysis pass; cited in the manuscript Methods (2.7). Produced by simulations.py --stage initial. N1 = continuous linear null (residual bootstrap), N2 = rounded-and-clipped linear null; seeds: N1 forest seed i, resampling seed i; N2 forest seed i, resampling seed 10000+i.",
+ "B": 300,
+ "N1_continuous": {
+  "B": 300,
+  "p_D_fixed_predictor": {
+   "interest": 0.19933554817275748,
+   "compare": 0.47840531561461797,
+   "sleep": 0.18272425249169436
+  },
+  "p_D_holm": {
+   "interest": 0.5481727574750831,
+   "compare": 0.5481727574750831,
+   "sleep": 0.5481727574750831
+  },
+  "p_G_best_breakpoint_per_predictor": {
+   "interest": 0.03986710963455149,
+   "compare": 0.3488372093023256,
+   "sleep": 0.10631229235880399
+  },
+  "p_Dmax_selection_over_predictors": 0.2823920265780731,
+  "p_Gmax_selection_over_predictors_and_breakpoints": 0.10631229235880399,
+  "null_q50_D": {
+   "interest": 0.06089139301119889,
+   "compare": 0.03945940042720225,
+   "sleep": 0.036307730678338215
+  },
+  "null_q95_D": {
+   "interest": 0.0992361486259668,
+   "compare": 0.08337922042507871,
+   "sleep": 0.07381368986604195
+  },
+  "null_q95_Dmax": 0.10275483725187831,
+  "null_q95_Gmax": 0.08966448964266326
+ },
+ "N2_discretised": {
+  "B": 300,
+  "p_D_fixed_predictor": {
+   "interest": 0.17275747508305647,
+   "compare": 0.4485049833887043,
+   "sleep": 0.14950166112956811
+  },
+  "p_D_holm": {
+   "interest": 0.44850498338870437,
+   "compare": 0.44850498338870437,
+   "sleep": 0.44850498338870437
+  },
+  "p_G_best_breakpoint_per_predictor": {
+   "interest": 0.023255813953488372,
+   "compare": 0.30564784053156147,
+   "sleep": 0.07973421926910298
+  },
+  "p_Dmax_selection_over_predictors": 0.21926910299003322,
+  "p_Gmax_selection_over_predictors_and_breakpoints": 0.046511627906976744,
+  "null_q50_D": {
+   "interest": 0.056892570290626755,
+   "compare": 0.03694187571305011,
+   "sleep": 0.03384601056869363
+  },
+  "null_q95_D": {
+   "interest": 0.09497011929290401,
+   "compare": 0.07305684217002692,
+   "sleep": 0.06833640556397941
+  },
+  "null_q95_Dmax": 0.09624158072899894,
+  "null_q95_Gmax": 0.0765355243536197
+ }
+}

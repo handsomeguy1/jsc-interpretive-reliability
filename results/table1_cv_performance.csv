@@ -1,0 +1,16 @@
+specification,model,pooled_R2_mean,R2_sd_over_repeats
+S1_P,ols,0.3592,0.0048
+S1_P,spline,0.3529,0.0063
+S1_P,rf,0.3575,0.0063
+S2_A1,ols,0.3081,0.0046
+S2_A1,spline,0.2997,0.0059
+S2_A1,rf,0.3049,0.0068
+S2_P,ols,0.3675,0.0055
+S2_P,spline,0.3622,0.0067
+S2_P,rf,0.3708,0.0068
+S3_P,ols,0.4452,0.0049
+S3_P,spline,0.4351,0.0074
+S3_P,rf,0.4404,0.0085
+S4_P,ols,0.3647,0.0056
+S4_P,spline,0.3654,0.0053
+S4_P,rf,0.3689,0.0083
