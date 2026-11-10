@@ -4,8 +4,7 @@
 omitted rather than assumed to be redistributable. To run the full analysis, place the original file here as `data/smmh.csv`.
 
 ## Source
-- Dataset: *Social Media and Mental Health* (survey, collected April–May 2022), published on Kaggle by Ahmed and Muhesena (2023). Search Kaggle for the dataset title; its
-  page gives the licence terms. (The page address was not re-checked when this repository was assembled; confirm it and the licence before redistributing the file.)
+- Dataset: *Social Media and Mental Health* (survey, collected April–May 2022), published on Kaggle by Ahmed and Muhesena (2023). Dataset available on Kaggle: [Social Media and Mental Health — Souvik Ahmed](https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health).
 - Download the CSV from the dataset page (a free Kaggle account is needed) and save it as `data/smmh.csv`, without opening and re-saving it in a spreadsheet program.
 
 ## Checksum of the file analysed in the manuscript
