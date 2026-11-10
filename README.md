@@ -1,4 +1,4 @@
-# Replication package: *Beyond Prediction: Interpretive Reliability in Computational Social Science*
+# Replication package: *Beyond Prediction: Interpretive Reliability in Social Computing*
 
 Code, stored results and figures for the manuscript's analysis of the *Social Media and Mental Health* survey (primary sample: social-media users, N = 478; primary
 specification: seven behavioural predictors + age + gender). The survey is used only as an empirical case for three methodological questions: does model flexibility improve
